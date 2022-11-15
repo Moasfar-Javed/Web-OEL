@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-secondary">
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo.png" alt="Rently" height="20%" width="20%">
+    </a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img class="pfp" src="assets/me.jpeg" alt="Rently" height="15%" width="15%">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div >
+    <div class="row">
+      <div class="col-3">
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-light">
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a href="forent.html" target="mainframe" id="dash" onclick="activeBtnDash()" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
+            <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Dashboard</span>
+          </a>
+          <a href="paycol.html" target="mainframe" id="pay" onclick="activeBtnPay()" class="list-group-item list-group-item-action py-2 ripple ">
+            <i class="fas fa-chart-area fa-fw me-3"></i><span>Pay/Collect Rent</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="col-9">
+    <iframe name="mainframe" src="forent.html" width="100%" height="100%" style="border:none;"></iframe>
+  </div>
+  </div>
+  </div>
+  <!-- Sidebar -->
+</body>
+
+</html>
+<style>
+  body{
+    overflow: hidden;
+  }
+  .navbar-brand {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    margin: 5px;
+  }
+
+  .nav-item {
+
+    width: 100%;
+    margin: auto;
+    right: 0;
+    text-align: right;
+
+  }
+
+  .pfp {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+  }
+
+  .sidebar {
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5% 0 100%;
+    /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 100%;
+    z-index: 600;
+  }
+</style>
+<script>
+  function activeBtnDash(){
+    document.getElementById("pay").className = "list-group-item list-group-item-action py-2 ripple";
+    document.getElementById("dash").className = "list-group-item list-group-item-action py-2 ripple active";
+  }
+  function activeBtnPay(){
+    document.getElementById("dash").className = "list-group-item list-group-item-action py-2 ripple";
+    document.getElementById("pay").className = "list-group-item list-group-item-action py-2 ripple active";
+  }
+</script>

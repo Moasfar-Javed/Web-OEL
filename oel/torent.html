@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+    <title>To Rent</title>
+</head>
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="forent.html">For Rent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="torent.html">To Rent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rented.html">Rented</a>
+        </li>
+      </ul>
+      <div class="addbar">
+        <p id="ln">Post a new listing for an appartment</p>
+        <a href="addnew.html" id="ln1" class="btn btn-success">+ ADD</a>
+      </div>
+     
+      <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4"><img src="assets/nhs.jpeg" class="img-fluid rounded-start" alt="..."></div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">NHS HOUSING</h5>
+                    <p class="card-text">600 sq ft, 2 story, 8 bedrooms, 2 lounge, 1 drawing room, 2 kitchen</p>
+                    <p class="card-text" id="price"><b>150000 PKR</b></p>
+                    <p class="card-text">Ad Status: <b><span id="price">ACTIVE</span></b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    #price{
+       color:green;
+   }
+   .addbar{
+    padding-left: 5px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    color:aliceblue;
+   }
+   #ln{
+    display: inline;
+   }
+   #ln1{
+    display: inline;
+    margin-left: 590px;
+   }
+</style>
